@@ -7,7 +7,7 @@ a{
   text-decoration: none;
 }
 body{
-  background-color: #040304;
+  background-color: #0f171E;
   color: #fff;
   scroll-behavior: smooth;
 }
@@ -15,9 +15,10 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 10rem;
 }
 .card{
-  width: 30%;
+  width: 25%;
 margin: 16px 0;
 }
 
@@ -31,4 +32,29 @@ border-radius: 4px;
   color: #fff;
   text-decoration: none;
 margin-top: 16px;
+}
+.movie{
+  margin: 2rem 10rem;
+}
+.movieName{
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.rating{
+  font-size: 16px;
+  margin-right: 2rem;
+}
+.premiere,.summary{
+  font-size: 16px;
+}
+.summary{
+  line-height: 24px;
+}
+.summImg{
+  display: flex;
+  /* align-items: center; */
+}
+.photo{
+  border-radius: 4px;
 }

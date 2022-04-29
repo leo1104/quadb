@@ -20,7 +20,7 @@ function Home() {
             <Link to={`/search/${score.show.id}`}>
               <div className='singleCard'>
                 <img src={score.show.image.medium}/>
-                <h3>{score.show.name}</h3>
+                {/* <h3>{score.show.name}</h3> */}
               </div>
             </Link>
         </div>
