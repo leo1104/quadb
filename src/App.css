@@ -1,74 +1,122 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
-body{
-  background-color: #0f171E;
+body {
+  background-color: #0f171e;
   color: #fff;
   scroll-behavior: smooth;
 }
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 10rem;
 }
-.card{
-  width: 25%;
-margin: 16px 0;
+
+.card {
+  width: fit-content;
+  margin: 16px 1rem;
 }
 
-.singleCard img{
-display: flex;
-margin: auto;
-border-radius: 4px;
+.singleCard img {
+  display: flex;
+  margin: auto;
+  border-radius: 4px;
 }
-.singleCard h3{
+
+.singleCard h3 {
   text-align: center;
   color: #fff;
   text-decoration: none;
-margin-top: 16px;
+  margin-top: 16px;
 }
-.movie{
+.movie {
   margin: 2rem 10rem;
 }
-.movieName{
+.movieName {
   font-size: 36px;
   margin-bottom: 24px;
 }
-.rating,.premiere{
-  color: #8197A4;
+.rating,
+.premiere {
+  color: #8197a4;
 }
-.rating{
+.rating {
   font-size: 16px;
   margin-right: 2rem;
 }
-.premiere,.summary{
+.premiere,
+.summary {
   font-size: 16px;
 }
-.summary{
+.summary {
   line-height: 24px;
 }
-.summImg{
+.summImg {
   display: flex;
-  /* align-items: center; */
 }
-.photo{
+.da {
+  margin-right: 36px;
+  text-align: justify;
+}
+
+.photo {
   border-radius: 4px;
 }
-.book{
+.book {
   padding: 10px 20px;
   border: none;
   font-size: 16px;
   line-height: 24px;
-  background-color: #1399DE;
+  background-color: #1399de;
   color: white;
   margin-top: 24px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .singleCard img {
+    width: 80vw;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 953px) {
+  .singleCard img {
+    /* width: 50vw; */
+    margin: 0;
+  }
+  .cards {
+    margin: 0;
+  }
+  .movie {
+    margin: 2rem;
+  }
+  .summImg {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards {
+    margin: auto;
+  }
+  .card {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .movie {
+    margin: 2rem;
+  }
+  .da {
+    margin: 0;
+  }
 }

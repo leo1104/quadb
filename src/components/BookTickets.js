@@ -27,19 +27,19 @@ function BookTickets() {
     <>
       {filteredData.length >= 1 ? (
         <div className="movie">
-         <div className="summImg">
-           <div style={{marginRight:"36px"}}>
-         <h3 className="movieName">{filteredData[0].show.name}</h3>
-         <div  style={{display:"flex",justifyContent:"flex-start",marginBottom:"24px"}}>
-         <p className="rating">{filteredData[0].show.rating.average}</p>
-         <p className="premiere">{filteredData[0].show.premiered.slice(0,4)}</p> 
-         </div>
-        
-        <p className="summary">{filteredData[0].show.summary.slice(3,-4)}</p>
-      <Link to={`/book`}>  <button className="book">Book Tickets</button></Link>
-        </div>
-        <img className="photo" src={filteredData[0].show.image.medium}/>
-        </div>
+          <div className="summImg">
+            <div className="da">
+              <h3 className="movieName">{filteredData[0].show.name}</h3>
+              <div style={{ display: "flex", justifyContent: "flex-start", marginBottom: "24px" }}>
+                <p className="rating">{filteredData[0].show.rating.average}</p>
+                <p className="premiere">{filteredData[0].show.premiered.slice(0, 4)}</p>
+              </div>
+
+              <p className="summary">{filteredData[0].show.summary.slice(3, -4)}</p>
+              <Link to={`/`}>  <button className="book">Book Tickets</button></Link>
+            </div>
+            <img className="photo" src={filteredData[0].show.image.medium} />
+          </div>
         </div>
       ) : (
         <div>Data not found</div>
