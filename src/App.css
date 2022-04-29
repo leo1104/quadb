@@ -40,7 +40,9 @@ margin-top: 16px;
   font-size: 36px;
   margin-bottom: 24px;
 }
-
+.rating,.premiere{
+  color: #8197A4;
+}
 .rating{
   font-size: 16px;
   margin-right: 2rem;
@@ -57,4 +59,16 @@ margin-top: 16px;
 }
 .photo{
   border-radius: 4px;
+}
+.book{
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #1399DE;
+  color: white;
+  margin-top: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
 }
