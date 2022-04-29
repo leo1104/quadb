@@ -80,6 +80,32 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+.formHeading{
+  font-size: 72px;
+  text-align: center;
+}
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bookingForm{
+  margin: 16px;
+}
+input{
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.username,.mobile,.ticketCount,.email{
+  margin: 12px 0;
+
+}
+.username{
+  margin-top: 24px;
+}
 @media screen and (max-width: 600px) {
   .singleCard img {
     width: 80vw;

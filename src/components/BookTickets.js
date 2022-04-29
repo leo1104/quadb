@@ -36,7 +36,7 @@ function BookTickets() {
               </div>
 
               <p className="summary">{filteredData[0].show.summary.slice(3, -4)}</p>
-              <Link to={`/`}>  <button className="book">Book Tickets</button></Link>
+              <Link to={`book`}>  <button className="book">Book Tickets</button></Link>
             </div>
             <img className="photo" src={filteredData[0].show.image.medium} />
           </div>
